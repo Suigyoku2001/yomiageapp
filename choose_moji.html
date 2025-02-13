@@ -200,6 +200,8 @@
 </body>
         <div class="button-container">
             <label><input type="checkbox" id="randomCheck"> ランダムで追加</label><br><br>
+	    <button onclick="selectAll()">全選択</button>
+            <button onclick="deselectAll()">全解除</button>	
             <button type="button" onclick="goToNextPage()">次へ</button>
             <button type="button" onclick="goToStartPage()">スタート画面に戻る</button>
         </div>
@@ -209,6 +211,13 @@
         function goToStartPage() {
             window.location.href = 'index.html';
         }
+	function selectAll() {
+    	　　document.querySelectorAll('input[name="option"]').forEach(cb => cb.checked = true);
+　　　　}
+
+　　　　　function deselectAll() {
+    　　　document.querySelectorAll('input[name="option"]').forEach(cb => cb.checked = false);
+　　　　}
 
         function goToNextPage() {
             const checkboxes = document.querySelectorAll('input[name="option"]:checked');
