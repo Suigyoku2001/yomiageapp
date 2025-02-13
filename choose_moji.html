@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決まり字から選ぶ</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .checkbox-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkbox-container label {
+            font-size: 7px;
+            color: #333;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>決まり字から選ぶ</h1>
+
+    <form id="checkboxForm">
+        <div class="checkbox-container">
+            <label><input type="checkbox" name="option" value="1"> 1.あきの</label>
+            <label><input type="checkbox" name="option" value="79"> 79.あきか</label>
+            <label><input type="checkbox" name="option" value="52"> 52.あけ</label>
+
+            <label><input type="checkbox" name="option" value="39"> 39.あさぢ</label>
+            <label><input type="checkbox" name="option" value="31"> 31.あさぼらけあ</label>
+            <label><input type="checkbox" name="option" value="64"> 64.あさぼらけう</label>
+            <label><input type="checkbox" name="option" value="3"> 3.あし</label>
+            <label><input type="checkbox" name="option" value="78"> 78.あはぢ</label>
+            <label><input type="checkbox" name="option" value="44"> 44.あはれ</label>
+            <label><input type="checkbox" name="option" value="43"> 43.あひ</label>
+            <label><input type="checkbox" name="option" value="12"> 12.あまつ</label>
+            <label><input type="checkbox" name="option" value="7"> 7.あまの</label>
+            <label><input type="checkbox" name="option" value="56"> 56.あらざ</label>
+            <label><input type="checkbox" name="option" value="69"> 69.あらし</label>
+            <label><input type="checkbox" name="option" value="30"> 30.ありあけ</label>
+            <label><input type="checkbox" name="option" value="58"> 58.ありま</label>
+
+            <label><input type="checkbox" name="option" value="61"> 61.いに</label>
+            <label><input type="checkbox" name="option" value="21"> 21.いまこ</label>
+            <label><input type="checkbox" name="option" value="63"> 63.いまは</label>
+
+            <label><input type="checkbox" name="option" value="74"> 74.うか</label>
+            <label><input type="checkbox" name="option" value="65"> 65.うら</label>
+
+            <label><input type="checkbox" name="option" value="60"> 60.おおえ</label>
+            <label><input type="checkbox" name="option" value="5"> 5.おく</label>
+            <label><input type="checkbox" name="option" value="26"> 26.おぐ</label>
+            <label><input type="checkbox" name="option" value="72"> 72.おと</label>
+            <label><input type="checkbox" name="option" value="95"> 95.おほけ</label>
+            <label><input type="checkbox" name="option" value="45"> 45.あふこ</label>
+            <label><input type="checkbox" name="option" value="82"> 82.おも</label>
+
+            <label><input type="checkbox" name="option" value="51"> 51.かく</label>
+            <label><input type="checkbox" name="option" value="6"> 6.かさ</label>
+            <label><input type="checkbox" name="option" value="98"> 98.かぜそ</label>
+            <label><input type="checkbox" name="option" value="48"> 48.かぜを</label>
+
+
+            <label><input type="checkbox" name="option" value="50"> 50.きみがためお</label>
+            <label><input type="checkbox" name="option" value="15"> 15.きみがためは</label>
+            <label><input type="checkbox" name="option" value="91"> 91.きり</label>
+
+            <label><input type="checkbox" name="option" value="29"> 29.こころあ</label>
+            <label><input type="checkbox" name="option" value="68"> 68.こころに</label>
+            <label><input type="checkbox" name="option" value="97"> 97.こぬ</label>
+            <label><input type="checkbox" name="option" value="24"> 24.この</label>
+            <label><input type="checkbox" name="option" value="41"> 41.こひ</label>
+            <label><input type="checkbox" name="option" value="10"> 10.これ</label>
+
+            <label><input type="checkbox" name="option" value="70"> 70.さ</label>
+
+            <label><input type="checkbox" name="option" value="40"> 40.しの</label>
+            <label><input type="checkbox" name="option" value="37"> 37.しら</label>
+
+            <label><input type="checkbox" name="option" value="18"> 18.す</label>
+            <label><input type="checkbox" name="option" value="77"> 77.せ</label>
+
+
+            <label><input type="checkbox" name="option" value="73"> 73.たか</label>
+            <label><input type="checkbox" name="option" value="55"> 55.たき</label>
+            <label><input type="checkbox" name="option" value="4"> 4.たご</label>
+            <label><input type="checkbox" name="option" value="16"> 16.たち</label>
+	        <label><input type="checkbox" name="option" value="89"> 89.たま</label>
+            <label><input type="checkbox" name="option" value="34"> 34.たれ</label>
+
+            <label><input type="checkbox" name="option" value="75"> 75.ちぎりお</label>
+            <label><input type="checkbox" name="option" value="42"> 42.ちぎりき</label>
+            <label><input type="checkbox" name="option" value="17"> 17.ちは</label>
+            <label><input type="checkbox" name="option" value="23"> 23.つき</label>
+            <label><input type="checkbox" name="option" value="13"> 13.つく</label>
+
+
+
+
+
+
+            <label><input type="checkbox" name="option" value="80"> 80.ながか</label>
+            <label><input type="checkbox" name="option" value="84"> 84.ながら</label>
+            <label><input type="checkbox" name="option" value="53"> 53.なげき</label>
+            <label><input type="checkbox" name="option" value="86"> 86.なげけ</label>
+            <label><input type="checkbox" name="option" value="36"> 36.なつ</label>
+            <label><input type="checkbox" name="option" value="25"> 25.なにし</label>
+           <label><input type="checkbox" name="option" value="88"> 88.なにはえ</label>
+            <label><input type="checkbox" name="option" value="19"> 19.なにはが</label>
+
+            <label><input type="checkbox" name="option" value="96"> 96.はなさ</label>
+            <label><input type="checkbox" name="option" value="9"> 9.はなの</label>
+            <label><input type="checkbox" name="option" value="2"> 2.はるす</label>
+            <label><input type="checkbox" name="option" value="67"> 67.はるの</label>
+
+            <label><input type="checkbox" name="option" value="33"> 33.ひさ</label>
+            <label><input type="checkbox" name="option" value="35"> 35.ひとは</label>
+            <label><input type="checkbox" name="option" value="99"> 99.ひとも</label>
+
+            <label><input type="checkbox" name="option" value="22"> 22.ふ</label>
+            <label><input type="checkbox" name="option" value="81"> 81.ほ</label>
+
+
+            <label><input type="checkbox" name="option" value="49"> 49.みかき</label>
+            <label><input type="checkbox" name="option" value="27"> 27.みかの</label>
+            <label><input type="checkbox" name="option" value="90"> 90.みせ</label>
+            <label><input type="checkbox" name="option" value="14"> 14.みち</label>
+            <label><input type="checkbox" name="option" value="94"> 94.みよ</label>
+
+            <label><input type="checkbox" name="option" value="87"> 87.む</label>
+            <label><input type="checkbox" name="option" value="57"> 57.めぐり</label>
+
+            <label><input type="checkbox" name="option" value="66"> 66.もろ</label>
+            <label><input type="checkbox" name="option" value="100"> 100.もも</label>
+
+            <label><input type="checkbox" name="option" value="59"> 59.やす</label>
+            <label><input type="checkbox" name="option" value="47"> 47.やへ</label>
+            <label><input type="checkbox" name="option" value="32"> 32.やまが</label>
+            <label><input type="checkbox" name="option" value="28"> 28.やまざ</label>
+
+            <label><input type="checkbox" name="option" value="71"> 71.ゆふ</label>
+            <label><input type="checkbox" name="option" value="46"> 46.ゆら</label>
+
+            <label><input type="checkbox" name="option" value="93"> 93.よのなかは</label>
+            <label><input type="checkbox" name="option" value="83"> 83.よのなかよ</label>
+            <label><input type="checkbox" name="option" value="85"> 85.よも</label>
+            <label><input type="checkbox" name="option" value="62"> 62.よを</label>
+
+
+            <label><input type="checkbox" name="option" value="8"> 8.わがい</label>
+            <label><input type="checkbox" name="option" value="92"> 92.わがそ</label>
+            <label><input type="checkbox" name="option" value="38"> 38.わすら</label>
+            <label><input type="checkbox" name="option" value="54"> 54.わすれ</label>
+            <label><input type="checkbox" name="option" value="76"> 76.わたのはらこ</label>
+            <label><input type="checkbox" name="option" value="11"> 11.わたのはらや</label>
+            <label><input type="checkbox" name="option" value="20"> 20.わび</label>
+        </div>
+    </form>
+</body>
+        <div class="button-container">
+            <label><input type="checkbox" id="randomCheck"> ランダムで追加</label><br><br>
+            <button type="button" onclick="goToNextPage()">次へ</button>
+            <button type="button" onclick="goToStartPage()">スタート画面に戻る</button>
+        </div>
+    </form>
+
+    <script>
+        function goToStartPage() {
+            window.location.href = 'index.html';
+        }
+
+        function goToNextPage() {
+            const checkboxes = document.querySelectorAll('input[name="option"]:checked');
+            let selectedValues = Array.from(checkboxes).map(cb => cb.value);
+
+            const randomChecked = document.getElementById('randomCheck').checked;
+            if (randomChecked && selectedValues.length > 0) {
+                const allOptions = [...Array(100).keys()].map(i => (i + 1).toString());
+                let availableOptions = allOptions.filter(opt => !selectedValues.includes(opt));
+                let additionalSelections = [];
+                while (additionalSelections.length < selectedValues.length && availableOptions.length > 0) {
+                    let randomIndex = Math.floor(Math.random() * availableOptions.length);
+                    additionalSelections.push(availableOptions[randomIndex]);
+                    availableOptions.splice(randomIndex, 1);
+                }
+                selectedValues = [...selectedValues, ...additionalSelections];
+            }
+
+            localStorage.setItem('selectedOptions', JSON.stringify(selectedValues));
+            window.location.href = 'show_selection.html';
+        }
+    </script>
+</body>
+</html>
