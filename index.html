@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選択方法を選ぶ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf8e2; /* 背景色を緑系に */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #28a745; /* タイトル文字色を緑に */
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            background-color: #28a745; /* ボタンの背景色を緑に */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838; /* ホバー時に少し暗い緑に */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>選択方法を選ぶ</h1>
+    <button onclick="openWindow('choose_num')">番号から選ぶ</button>
+    <button onclick="openWindow('choose_moji')">決まり字から選ぶ</button>
+
+    <script>
+        function openWindow(type) {
+            if (type === 'choose_num') {
+                window.open('choose_num.html', '_blank', 'width=600,height=400');
+            } else if (type === 'choose_moji') {
+                window.open('choose_moji.html', '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+</html>
